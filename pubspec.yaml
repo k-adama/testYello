@@ -1,0 +1,387 @@
+name: yello
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.10+10
+
+environment:
+  sdk: ">=2.18.1 <3.0.0"
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  flutter_riverpod: ^1.0.4
+  flutter_state_notifier: ^0.7.1
+  scribble: ^0.9.1
+  flutter_simple_calculator: ^2.2.2
+  just_audio: ^0.9.29
+  audioplayers: ^1.0.1
+  http: ^0.13.4
+  shared_preferences: ^2.0.15
+  flutter_install_apk_silently: ^0.2.0
+  dio: ^4.0.6
+  permission_handler: ^8.3.0
+  downloads_path_provider_28: ^0.1.2
+  open_file: ^3.1.0
+  flutter_launcher_icons: ^0.11.0
+  simple_rich_text: ^2.0.49
+  wakelock: ^0.6.2
+  flutter_countdown_timer: ^4.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/logo.png"
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^2.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/
+    # - assets/lecon/
+    - assets/mtn/accueil.png
+    #  prealphabetisation 1
+    - assets/icons/
+    - assets/prealpha/
+    - assets/ecriture/
+    - assets/audio/alphabet_lecture/
+
+    # Préhalpha
+    - assets/audio/prealpha/
+    - assets/prealpha/
+
+      #  Leçon 1
+    - assets/audio/lecon1/
+    - assets/lecon1/
+    - assets/alphabets/table.png
+    #  Leçon 2
+    - assets/audio/lecon2/
+    - assets/lecon2/
+
+      #  Leçon 3
+    - assets/lecon3/
+    - assets/audio/lecon3/
+
+      #  Leçon 4
+    - assets/audio/lecon4/
+    - assets/lecon4/imgL4.png
+
+      #  Leçon 5
+    - assets/audio/lecon/
+    - assets/lecon/
+
+      #  Leçon 6
+    - assets/audio/lecon6/
+    - assets/lecon6/
+
+      #  Leçon 7
+    - assets/audio/lecon7/
+    - assets/lecon7/imgL7.png
+
+      #  Leçon 8
+    - assets/audio/lecon8/
+    - assets/lecon8/lec8.jpeg
+
+      #  Leçon 9
+    - assets/audio/lecon9/
+    - assets/lecon9/lec9.jpeg
+    - assets/lecon9/petitI.PNG
+
+    - assets/lecon9/
+
+      #  Leçon 10
+    - assets/audio/lecon10/
+    - assets/lecon10/
+    - assets/lecon10/t/
+
+      #  Leçon 11
+    - assets/audio/lecon11/
+    - assets/lecon11/imgL11.png
+
+      #  Leçon 14
+    - assets/audio/lecon14/
+    - assets/lecon14/
+
+      #  Leçon 15
+    - assets/audio/lecon15/
+    - assets/lecon15/imgL15.png
+
+      #  Leçon 16
+    - assets/audio/lecon16/
+    - assets/lecon16/lec16.png
+
+      #  Leçon 17
+    - assets/audio/lecon17/
+    - assets/lecon17/
+
+    #  Leçon 18
+    - assets/audio/lecon18/
+    - assets/lecon18/
+
+      #  Leçon 19
+    - assets/audio/lecon19/
+    - assets/lecon19/imgL19.png
+
+      #  Leçon 21
+    - assets/audio/lecon21/
+    - assets/lecon21/
+
+      #  Leçon 22
+    - assets/audio/lecon22/
+    - assets/lecon22/
+
+      #  Leçon 23
+    - assets/audio/lecon23/
+    - assets/lecon23/
+
+      #  Leçon 24
+    - assets/audio/lecon24/
+    - assets/lecon24/lecon24.png
+
+    #  Leçon 25
+    - assets/audio/lecon25/
+    - assets/lecon25/
+    - assets/lecon25/lecon25.png
+
+      #  Leçon 26
+    - assets/audio/lecon26/
+    - assets/lecon26/
+
+      #  Leçon 27
+    - assets/audio/lecon27/
+    - assets/lecon27/
+
+      #  Leçon 28
+    - assets/audio/lecon28/
+    - assets/lecon28/
+
+      #  Leçon 29
+    - assets/audio/lecon29/
+    - assets/lecon29/
+
+      #  Leçon 30
+    - assets/audio/lecon30/
+    - assets/lecon30/
+    - assets/lecon30/lecon30.png
+    
+     #  Leçon 31  --------
+    - assets/audio/lecon31/
+    - assets/lecon31/
+
+         #  Leçon 32  --------
+    - assets/audio/lecon32/
+    - assets/lecon32/
+
+      #  Leçon 33
+    - assets/audio/lecon33/
+    - assets/lecon33/
+
+      #  Leçon 34
+    - assets/audio/lecon34/
+    - assets/lecon34/
+
+        #  Leçon 35
+    - assets/audio/lecon35/
+    - assets/lecon35/
+    - assets/lecon35/photo.png
+
+          #  Leçon 36
+    - assets/audio/lecon36/
+    - assets/lecon36/
+    - assets/lecon36/image1.png
+    - assets/lecon36/image2.png
+    - assets/lecon36/addition.png
+    - assets/lecon36/soustraction.png
+    - assets/lecon36/multiplication.png
+    - assets/lecon36/division.png
+
+      #  Leçon 37
+    - assets/audio/lecon37/
+    - assets/lecon37/
+
+      #  Leçon 38
+    - assets/audio/lecon38/
+    - assets/lecon38/
+
+         #  Leçon 39  --------
+    - assets/audio/lecon39/
+    - assets/lecon39/
+
+         #  Leçon 40  --------
+    - assets/audio/lecon40/
+    - assets/lecon40/
+
+      #  Leçon 42
+    - assets/audio/lecon42/
+    - assets/lecon42/
+
+         #  Leçon 43
+    - assets/audio/lecon43/
+    - assets/lecon43/
+
+      #  Leçon 44
+    - assets/audio/lecon44/
+    - assets/lecon44/
+
+    #             #  Leçon 45
+    # - assets/audio/lecon45/
+    # - assets/lecon45/
+
+         #  Leçon 46  --------
+    - assets/audio/lecon46/
+    - assets/lecon46/
+
+
+                #  Leçon 45  -------- 
+    - assets/audio/lecon45/
+    - assets/lecon45/
+
+         #  Leçon 47  --------
+    - assets/audio/lecon47/
+    - assets/lecon47/
+
+         #  Leçon 48  --------
+    - assets/audio/lecon48/
+    - assets/lecon48/
+
+             #  Leçon 50  --------
+    - assets/audio/lecon50/
+    - assets/lecon50/
+             #  Leçon 52  --------
+    - assets/audio/lecon52/
+    - assets/lecon52/
+      #  Leçon 51
+    - assets/audio/lecon51/
+    - assets/lecon51/
+    - assets/lecon51/budget.png
+
+             #  Leçon 53  --------
+    - assets/audio/lecon53/
+    - assets/lecon53/
+
+    #  Leçon 55  --------
+    - assets/audio/lecon55/
+    - assets/lecon55/
+    - assets/lecon55/calendrier.png
+
+     #  Leçon 56  --------
+    - assets/audio/lecon56/
+    - assets/lecon56/
+
+     #  Leçon 58  --------
+    - assets/audio/lecon58/
+    - assets/lecon58/
+
+     #  Leçon 62  --------
+    - assets/audio/lecon62/
+    - assets/lecon62/
+
+ #  Leçon 65  --------
+    - assets/audio/lecon65/
+    - assets/lecon65/
+        #  Leçon 66  --------
+    - assets/audio/lecon66/
+    - assets/lecon66/
+
+     #  Leçon 67  --------
+    - assets/audio/lecon67/
+    - assets/lecon67/
+
+    #  Leçon 64  --------
+    - assets/audio/lecon64/
+    - assets/lecon64/
+
+                #  Leçon 49  -------- 
+    - assets/audio/lecon49/
+    - assets/lecon49/
+
+                #  Leçon 54  -------- 
+    - assets/audio/lecon54/
+    - assets/lecon54/
+
+                #  Leçon 57  -------- 
+    - assets/audio/lecon57/
+    - assets/lecon57/
+
+                    #  Leçon 59  -------- 
+    - assets/audio/lecon59/
+    - assets/lecon59/
+                    #  Leçon 60  -------- 
+    - assets/audio/lecon60/
+    - assets/lecon60/
+
+                #  Leçon 61  -------- 
+    - assets/audio/lecon61/
+    - assets/lecon61/
+                #  Leçon 63  -------- 
+    - assets/audio/lecon63/
+    - assets/lecon63/
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: Stanberry
+      fonts:
+        - asset: fonts/Stanberry.ttf
+    #       - asset: fonts/Schyler-Italic.ttf
+    #         style: italic
+    - family: Poppins
+      fonts:
+        - asset: fonts/Poppins/Poppins-Regular.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
